@@ -1,0 +1,40 @@
+{
+  "name": "latest-video",
+  "version": "0.1.0",
+  "description": "Get latest video for channel on youtube",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "remove": "rimraf dist",
+    "build": "node build.mjs",
+    "format": "biome format --write .",
+    "prepublishOnly": "run-s remove format build tsc",
+    "ci": "run-s remove format build tsc",
+    "test": "node test.mjs"
+  },
+  "keywords": [],
+  "author": "Googlefan <contact@googlefan.net>",
+  "license": "MIT",
+  "dependencies": {
+    "native-dom": "^0.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.3.1",
+    "esbuild": "^0.19.5",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2"
+  },
+  "files": [
+    "dist/index.d.ts",
+    "dist/index.js",
+    "dist/index.mjs",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/googlefan256/latest-video.git"
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.3.1/schema.json",
+    "organizeImports": {
+        "enabled": true
+    },
+    "linter": {
+        "enabled": false,
+        "rules": {
+            "recommended": true
+        }
+    },
+    "formatter": {
+        "ignore": ["node_modules/", "dist/"],
+        "indentWidth": 4,
+        "indentStyle": "space"
+    }
+}
